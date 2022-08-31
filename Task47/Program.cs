@@ -26,6 +26,7 @@ class Program
     }
     static void Main()
     {
+        Console.Clear();
         Console.Write("Введите количество столбцов массива M = ");
         int M = Convert.ToInt32(Console.ReadLine());
         Console.Write("Введите количество строк массива N = ");
@@ -35,7 +36,7 @@ class Program
         double min = Convert.ToInt32(Console.ReadLine());
         Console.Write("Введите максимальное значение для чисел Max = ");
         double max = Convert.ToInt32(Console.ReadLine());
-
+        
         WriteMatrix(CreateMatrix(row: M, column: N, maxValue: max, minValue: min));
     }
 }
