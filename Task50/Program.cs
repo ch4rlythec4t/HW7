@@ -25,10 +25,10 @@ class Program
         double[,] newMatrix = {{1,4,7,2},
                                {5,9,2,3},
                                {8,4,2,4}};
-
-        WriteMatrix(newMatrix);
-
-        Console.Write("Введите позицию искомого элемента:  ");
+      
+        Console.Clear();
+        WriteMatrix(newMatrix);   
+        Console.Write("Введите позицию искомого элемента: ");
         int position = Convert.ToInt32(Console.ReadLine());
 
         SearchPositionElement(matrix: newMatrix, position: position);
